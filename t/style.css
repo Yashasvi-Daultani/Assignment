@@ -1,0 +1,104 @@
+/* Write your styles here  */
+
+
+#header{
+  
+    width: 40%;
+    margin: auto;
+    text-align: center;
+  }
+  #doctors{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+  }
+  #doctors>div{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    text-align: center;
+    padding: 0px 10px 20px 10px;
+  }
+  
+  #doctors>div>img{
+    width: 100%;
+  }
+  p+div{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  #service{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,auto);
+    gap: 20px;
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+  }
+  #service>div{
+    
+    text-align: center;
+    padding: 0px 10px 20px 10px;
+    
+  }
+  .blue{
+    color: blue;
+    
+  }
+  .red{
+    background-color: red;
+    color: white;
+  }
+  .f{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* keep media queries at the bottom */
+  /* Medium screens */
+  @media all and (min-width: 451px) and (max-width: 750px) {
+    #header{
+       
+      width: 90%;   
+    }
+    #doctors{
+      grid-template-columns: repeat(2,1fr);
+      grid-template-rows: auto;  
+        width: 90%;
+    }
+    #service{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+     
+      
+      width: 90%;
+      
+    }
+  
+  }
+  /* Small screens */
+  @media all and (min-width: 100px) and (max-width: 450px) {
+    #header{
+      
+        width: 100%;
+    }
+    #doctors{
+      
+      grid-template-columns: repeat(1,1fr);
+      grid-template-rows: auto;  
+        width: 100%;
+    }
+    #service{
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      
+      
+      width: 100%;
+      
+    }
+  }
+  
