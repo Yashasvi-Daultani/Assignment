@@ -1,0 +1,16 @@
+#navbar>div {
+    display: flex;
+    gap: 20px;
+    padding-left:514px ;
+}
+#navbar>h2{
+    padding-left:597px ;
+}
+#create>h1{
+    padding-left: 464px;
+}
+#create>form{
+    padding-left: 600px;
+    gap: 20px;
+}
+
